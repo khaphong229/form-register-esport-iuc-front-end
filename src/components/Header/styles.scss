@@ -1,0 +1,28 @@
+@import '../../assets/scss/variable.scss';
+
+.info__image-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+  margin: 40px 0;
+  > * {
+    object-fit: cover;
+  }
+  .info__icon {
+    width: 35%;
+  }
+}
+.title {
+  text-align: center;
+  padding: 0 10%;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 19px !important;
+  }
+}

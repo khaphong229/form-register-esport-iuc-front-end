@@ -1,21 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './page/Home'
 import Register from './page/Register'
+import './assets/scss/reset.scss'
+import './assets/scss/base.scss'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-    children: [
-      {
-        path: 'team',
-        element: <Register />
-      }
-    ]
+    element: <Home />
+  },
+  {
+    path: 'register',
+    element: <Register />
   }
 ])
 

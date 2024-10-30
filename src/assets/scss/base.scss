@@ -1,0 +1,37 @@
+@import './variable.scss';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bgColor;
+  color: $textColor;
+  font-size: 16px;
+}
+
+//button styles
+
+.btn {
+  padding: 12px 20px;
+  background: $gradientColor;
+  border-radius: 12px;
+  color: $textBtnColor;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin-inline: auto;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  color: transparent;
+  background: $gradientColor;
+  background-clip: text; //khoang cach nen mo rong trong 1 phan tu
+  -webkit-background-clip: text;
+}

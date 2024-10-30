@@ -1,0 +1,94 @@
+@import '../../assets/scss/variable.scss';
+
+.form__container {
+  .icon__backhome {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    gap: 8px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  ::placeholder {
+    color: #cccccc43;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .form__wrap {
+    margin-top: 40px;
+    padding: 0 10%;
+    .ant-form {
+      .ant-form-item {
+        .ant-input {
+          background-color: $bgColor2;
+          border: none;
+          outline: none;
+          height: 46px;
+          color: $textColor;
+        }
+      }
+    }
+    label,
+    span,
+    p {
+      color: $subTextColor;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .ant-input-group-addon {
+      border: none;
+    }
+    .ant-select-selector {
+      background-color: $bgColor2;
+      border: none;
+      outline: none;
+      height: 46px;
+      color: $textColor;
+    }
+    .ant-radio-inner {
+      background-color: $subTextColor;
+      border-color: $subTextColor;
+    }
+    .ant-upload-drag-container {
+      .ant-upload-text,
+      .ant-upload-hint {
+        color: $subTextColor;
+      }
+    }
+    .ant-upload-wrapper {
+      .ant-upload-drag:hover {
+        border-color: $subTextColor;
+      }
+    }
+    .anticon {
+      color: $subTextColor !important;
+    }
+    .ant-btn-primary {
+      height: auto;
+      margin-inline: auto;
+      display: block;
+      padding: 12px 20px;
+      background: $gradientColor;
+      border-radius: 12px;
+      color: $textBtnColor;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      &:hover {
+        background: $gradientColor;
+        color: $textBtnColor;
+      }
+      > span {
+        color: $textBtnColor;
+        font-weight: 600;
+      }
+    }
+  }
+}
