@@ -8,12 +8,14 @@ import DividerCustom from '../../components/Divider'
 import Dragger from 'antd/es/upload/Dragger'
 import TeamService from '../../services/apiTeam'
 import MemberFormSection from '../../components/FormMember'
-
+import URL_SERVER from '../../utils/constants'
 function Register() {
   const [form] = Form.useForm()
   const [uploadedImages, setUploadedImages] = useState([])
 
   const handleUpload = async file => {
+    console.log(URL_SERVER)
+
     try {
       const formData = new FormData()
       formData.append('images', file)
