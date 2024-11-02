@@ -8,7 +8,11 @@ const ENDPOINTS = {
 class TeamService {
   static async createTeam(data) {
     try {
-      const response = await axiosInstance.post(ENDPOINTS.REGISTER, data)
+      const response = await axiosInstance.post(ENDPOINTS.REGISTER, data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
       return {
         success: true,
         data: response
@@ -26,7 +30,15 @@ class TeamService {
 
   static async getTeams(params = {}) {
     try {
-      const response = await axiosInstance.get(ENDPOINTS.REGISTER, { params })
+      const response = await axiosInstance.get(
+        ENDPOINTS.REGISTER,
+        { params },
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      )
       return {
         success: true,
         data: response

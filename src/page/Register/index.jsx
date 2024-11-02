@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../../components/Header'
-import { Button, Checkbox, Form, Input, message, Radio } from 'antd'
+import { Button, Checkbox, Form, Input, message, Modal } from 'antd'
 import './styles.scss'
 import { Link, useNavigate } from 'react-router-dom'
 import { DoubleLeftOutlined, InboxOutlined } from '@ant-design/icons'
@@ -51,7 +51,6 @@ function Register() {
 
   const transformFormData = values => {
     const {
-      board_competition,
       code0,
       code1,
       code2,
@@ -88,7 +87,6 @@ function Register() {
 
     return {
       name: teamName,
-      group: board_competition,
       slogan: slogan || 'Chơi là chất',
       leader: {
         codeLeader,
@@ -148,7 +146,17 @@ function Register() {
       const response = await TeamService.createTeam(transformedData)
 
       if (response.success === true) {
-        message.success(response.message || 'Đăng ký thành công! Hẹn bạn ở giải đấu ^^')
+        // message.success(response.message || 'Đăng ký thành công! Hẹn bạn ở giải đấu ^^')
+        Modal.success({
+          title: 'Chúc mừng bạn đã đăng ký tham gia thành công!',
+          content: (
+            <div>
+              <p>Bạn hãy để ý thông tin, thể lệ cuộc thi nhé</p>
+              <p>Nộp lệ phí đúng hạn nha!</p>
+              <p>Hẹn bạn ở giải đấu</p>
+            </div>
+          )
+        })
         form.resetFields()
         setUploadedImages([])
       } else {
@@ -173,8 +181,7 @@ function Register() {
           onFinish={onFinish}
           layout="vertical"
           initialValues={{
-            prefix: '84',
-            board_competition: 'A' // Set default value for board_competition
+            prefix: '84'
           }}
           style={{ maxWidth: 800, marginInline: 'auto' }}
         >
@@ -193,22 +200,6 @@ function Register() {
 
           <Form.Item name="slogan" label="Slogan">
             <Input.TextArea placeholder="Nhập slogan..." />
-          </Form.Item>
-
-          <Form.Item
-            name="board_competition"
-            label="Bảng đấu"
-            rules={[
-              {
-                required: true,
-                message: 'Vui lòng chọn bảng đấu'
-              }
-            ]}
-          >
-            <Radio.Group>
-              <Radio value="A">Bảng A</Radio>
-              <Radio value="B">Bảng B</Radio>
-            </Radio.Group>
           </Form.Item>
 
           <DividerCustom content="Đội trưởng" />
