@@ -116,7 +116,7 @@ function Home() {
   }, [])
 
   const handlePassRegister = () => {
-    navigate('/register')
+    navigate('/competition')
   }
 
   return (
@@ -131,7 +131,7 @@ function Home() {
         data-aos="fade-down"
       />
       <button data-aos="zoom-in" className="btn info__btn" onClick={handlePassRegister}>
-        Đăng ký ngay
+        Xem giải đấu
       </button>
       <div className="info-wrap">
         {tournamentInfo.map((section, index) => (
