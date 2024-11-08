@@ -1,5 +1,42 @@
 @import '../../assets/scss/variable.scss';
 
+.image__group {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  .img__item-1,
+  .img__item-2,
+  .img__item-3 {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+
+  .img__item-1 {
+    top: 5%;
+    right: 0;
+    transform: translateX(-20px);
+  }
+
+  .img__item-2 {
+    top: 25%;
+    left: 0;
+    transform: translateX(-140px);
+  }
+
+  .img__item-3 {
+    top: 60%;
+    right: 0;
+    transform: translateX(100px);
+  }
+}
+
 .list-team__navigate {
   display: flex;
   align-items: center;
@@ -25,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px 8px;
+    padding: 12px 0;
     background-color: $bgColor3;
     border-radius: 16px;
     user-select: none;
@@ -66,7 +103,7 @@
       margin: 20px 0;
       display: flex;
       align-items: center;
-
+      padding: 0 6px;
       .name-team {
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -129,6 +166,75 @@
         border-radius: 8px;
         color: $textColor;
       }
+    }
+  }
+}
+@media screen and (max-width: 820px) {
+  .competition-team__group-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    gap: 16px;
+    margin: 40px auto 0;
+    padding: 0 10%;
+  }
+  .list-team__navigate {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+    .text-navigate {
+      color: $textColor;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $subTextColor;
+      }
+    }
+  }
+  .image__group {
+    .img__item-1,
+    .img__item-2,
+    .img__item-3 {
+      width: 300px;
+      opacity: 0.8;
+    }
+    .img__item-1 {
+      transform: translateX(0);
+    }
+    .img__item-2 {
+      transform: translateX(0);
+    }
+    .img__item-3 {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .competition-team__group-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
+    gap: 16px;
+    margin: 40px auto 0;
+    padding: 0 10%;
+  }
+  .image__group {
+    .img__item-1,
+    .img__item-2,
+    .img__item-3 {
+      width: 200px;
+      opacity: 0.8;
+    }
+    .img__item-1 {
+      top: 20%;
+    }
+    .img__item-2 {
+      top: 40%;
+    }
+    .img__item-3 {
+      top: 70%;
     }
   }
 }
