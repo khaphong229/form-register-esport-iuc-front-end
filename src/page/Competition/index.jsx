@@ -36,8 +36,12 @@ function Competition() {
     if (hours === 10 && minutes >= 30) return { start: 24, end: 32 } // 10:30 - 11:00
     if (hours === 11 && minutes < 30) return { start: 32, end: 40 } // 11:00 - 11:30
     if (hours === 11 && minutes >= 30) return { start: 40, end: 48 } // 11:30 - 12:00
+    if (hours === 13 && minutes >= 30) return { start: 48, end: 53 } // 13:30 - 14:00
+    if (hours === 14 && minutes >= 0) return { start: 53, end: 58 } // 14:00 - 14:30
+    if (hours === 14 && minutes >= 30) return { start: 58, end: 63 } // 14:30 - 15:00
+    if (hours === 15 && minutes >= 0) return { start: 63, end: 68 } // 15:00 - 15:30
 
-    return { start: 0, end: 8 }
+    return { start: 0, end: 0 }
   }
 
   const [currentSlot, setCurrentSlot] = useState(getCurrentTimeSlot())
@@ -94,7 +98,17 @@ function Competition() {
           Xem danh sách các đội thi đấu
         </Link>
       </div>
-
+      {teams.slice(start, end).length === 0 && (
+        <h2
+          style={{
+            textAlign: 'center',
+            width: '100%',
+            marginTop: '10%'
+          }}
+        >
+          Chưa tới thời gian thi đấu
+        </h2>
+      )}
       {/* Render teams based on the current time slot */}
       <div className="competition-team__group-wrap">
         {teams.slice(start, end).map((team, index) => (

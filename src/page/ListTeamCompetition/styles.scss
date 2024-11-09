@@ -88,7 +88,8 @@
 }
 
 .team-item-score {
-  background: $gradientColor;
+  // background: $gradientColor;
+  background: $bgColor3;
   min-width: 40px;
   height: 40px;
   display: flex;
@@ -97,7 +98,8 @@
   border-radius: 8px;
 
   span {
-    color: $textBtnColor;
+    // color: $textBtnColor;
+    color: $textColor;
     font-weight: 600;
   }
 }
