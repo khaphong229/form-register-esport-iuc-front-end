@@ -6,19 +6,32 @@ import competition_teams from '../../utils/default'
 import { Link } from 'react-router-dom'
 import { DoubleRightOutlined, PauseCircleOutlined, PlayCircleOutlined } from '@ant-design/icons'
 import { formatTime } from '../../utils/helpers'
-import { Tooltip } from 'antd'
+import { Tooltip, Modal } from 'antd'
 import item1 from '../../assets/images/item1.png'
 import item2 from '../../assets/images/item2.png'
 import item3 from '../../assets/images/item3.PNG'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Competition() {
   const [teams, setTeams] = useState(
     competition_teams.map(team => ({
       ...team,
       isTimerRunning: false,
-      time: 0
+      time: 0,
+      isDefeated: false
     }))
   )
+
+  const [modalVisible, setModalVisible] = useState(false)
+  const [selectedTeam, setSelectedTeam] = useState(null)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
+  }, [])
 
   const checkAdmin = () => {
     const adminLocal = localStorage.getItem('admin')
@@ -36,12 +49,12 @@ function Competition() {
     if (hours === 10 && minutes >= 30) return { start: 24, end: 32 } // 10:30 - 11:00
     if (hours === 11 && minutes < 30) return { start: 32, end: 40 } // 11:00 - 11:30
     if (hours === 11 && minutes >= 30) return { start: 40, end: 48 } // 11:30 - 12:00
-    if (hours === 13 && minutes >= 30) return { start: 48, end: 53 } // 13:30 - 14:00
-    if (hours === 14 && minutes >= 0) return { start: 53, end: 58 } // 14:00 - 14:30
-    if (hours === 14 && minutes >= 30) return { start: 58, end: 63 } // 14:30 - 15:00
-    if (hours === 15 && minutes >= 0) return { start: 63, end: 68 } // 15:00 - 15:30
+    if (hours === 13 && minutes >= 30) return { start: 48, end: 52 } // 13:30 - 14:00
+    if (hours === 14 && minutes >= 0) return { start: 52, end: 56 } // 14:00 - 14:30
+    if (hours === 14 && minutes >= 30) return { start: 56, end: 60 } // 14:30 - 15:00
+    if (hours === 15 && minutes >= 0) return { start: 60, end: 64 } // 15:00 - 15:30
 
-    return { start: 0, end: 0 }
+    return { start: 0, end: 8 }
   }
 
   const [currentSlot, setCurrentSlot] = useState(getCurrentTimeSlot())
@@ -82,6 +95,28 @@ function Competition() {
     })
   }
 
+  const handleTeamClick = (team, teamNumber) => {
+    if (checkAdmin()) {
+      setSelectedTeam({ ...team, teamNumber })
+      setModalVisible(true)
+    }
+  }
+
+  const handleConfirmDefeat = () => {
+    setTeams(prevTeams => {
+      return prevTeams.map(team => {
+        if (team.tenBang === selectedTeam.tenBang) {
+          return {
+            ...team,
+            [`isDefeated${selectedTeam.teamNumber}`]: true
+          }
+        }
+        return team
+      })
+    })
+    setModalVisible(false)
+  }
+
   const { start, end } = currentSlot
 
   return (
@@ -109,16 +144,22 @@ function Competition() {
           Chưa tới thời gian thi đấu
         </h2>
       )}
-      {/* Render teams based on the current time slot */}
       <div className="competition-team__group-wrap">
         {teams.slice(start, end).map((team, index) => (
-          <div key={index} className="competition-team__item">
+          <div key={index} className="competition-team__item" data-aos="fade-up" data-aos-delay={index * 100}>
             <div className="competition-team__top">
               <span className="table__title">{team.tenBang}</span>
             </div>
             <div className="competition-team__content">
-              <div className="team-item">
-                <img src={team.logoTeam1} alt="logo-team-1" />
+              <div className="team-item" onClick={() => handleTeamClick(team, 1)}>
+                <Tooltip title={'Bấm để xác nhận đội thua'}>
+                  <img
+                    src={team.logoTeam1}
+                    alt="logo-team-1"
+                    style={{ filter: team.isDefeated1 ? 'grayscale(100%)' : 'none' }}
+                  />
+                </Tooltip>
+
                 <Tooltip title={team.tenTeam1}>
                   <span className="name-team">{team.tenTeam1}</span>
                 </Tooltip>
@@ -126,8 +167,14 @@ function Competition() {
               <div className="icon-solo">
                 <img src={solo} alt="" />
               </div>
-              <div className="team-item">
-                <img src={team.logoTeam2} alt="logo-team-2" />
+              <div className="team-item" onClick={() => handleTeamClick(team, 2)}>
+                <Tooltip title={'Bấm để xác nhận đội thua'}>
+                  <img
+                    src={team.logoTeam2}
+                    alt="logo-team-2"
+                    style={{ filter: team.isDefeated2 ? 'grayscale(100%)' : 'none' }}
+                  />
+                </Tooltip>
                 <Tooltip title={team.tenTeam2}>
                   <span className="name-team">{team.tenTeam2}</span>
                 </Tooltip>
@@ -148,6 +195,16 @@ function Competition() {
           </div>
         ))}
       </div>
+      <Modal
+        title="Xác nhận đội thua"
+        okText="Xác nhận"
+        cancelText="Hủy"
+        visible={modalVisible}
+        onOk={handleConfirmDefeat}
+        onCancel={() => setModalVisible(false)}
+      >
+        <p>Bạn có chắc chắn muốn xác nhận đội {selectedTeam?.['tenTeam' + selectedTeam?.teamNumber]} đã thua?</p>
+      </Modal>
     </div>
   )
 }

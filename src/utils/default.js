@@ -12,9 +12,9 @@ import demon from '../assets/images/logo-teams/demon.jpeg'
 import dutrinhko from '../assets/images/logo-teams/dutrinhko.jpeg'
 import doitru from '../assets/images/logo-teams/doitruhang.jpg'
 import eTeam from '../assets/images/logo-teams/eteam.png'
-import feedtowin2 from '../assets/images/logo-teams/feedtowin.png'
+// import feedtowin2 from '../assets/images/logo-teams/feedtowin.png'
 import gap from '../assets/images/logo-teams/gap.jpg'
-import heo2 from '../assets/images/logo-teams/heo.jpeg'
+// import heo2 from '../assets/images/logo-teams/heo.jpeg'
 import hieucaidangcap2 from '../assets/images/logo-teams/hieucaidangcap.png'
 import hnp from '../assets/images/logo-teams/hnp.jpg'
 import kidflash from '../assets/images/logo-teams/kidflash.png'
@@ -32,7 +32,7 @@ import udugamezone from '../assets/images/logo-teams/udugamezome.jpg'
 import vinagang2 from '../assets/images/logo-teams/vinagang.jpg'
 import whitewolves2 from '../assets/images/logo-teams/whitewolves.jpg'
 import meobeo from '../assets/images/logo-teams/meobeo.jpg'
-
+import unbreak from '../assets/images/logo-teams/unbreak.jpeg'
 const competition_teams = [
   //9h
   {
@@ -101,9 +101,9 @@ const competition_teams = [
   },
   {
     tenBang: 'Bảng B',
-    logoTeam1: feedtowin2,
+    logoTeam1: unbreak,
     logoTeam2: whitewolves2,
-    tenTeam1: 'FEED TO WIN',
+    tenTeam1: 'Unbreakeble',
     tenTeam2: 'WhiteWolves'
   },
   {
@@ -148,7 +148,7 @@ const competition_teams = [
     tenTeam1: 'Mèo Béo',
     tenTeam2: 'SHADOW STRIKERS ESPORTS'
   },
-  // tournamentData1
+  // 10h
   {
     tenBang: 'Bảng A',
     logoTeam1: logo1,
@@ -159,9 +159,9 @@ const competition_teams = [
   {
     tenBang: 'Bảng B',
     logoTeam1: hieucaidangcap2,
-    logoTeam2: heo2,
+    logoTeam2: unbreak,
     tenTeam1: 'Hiểu Cái Đẳng Cấp',
-    tenTeam2: 'Heo Búy'
+    tenTeam2: 'Unbreakeble'
   },
   {
     tenBang: 'Bảng C',
@@ -205,7 +205,7 @@ const competition_teams = [
     tenTeam1: 'Demon Team',
     tenTeam2: 'Mèo Béo'
   },
-  // tournamentData2
+  // 10h30
   {
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
@@ -216,9 +216,9 @@ const competition_teams = [
   {
     tenBang: 'Bảng B',
     logoTeam1: doitru,
-    logoTeam2: feedtowin2,
+    logoTeam2: whitewolves2,
     tenTeam1: 'Đội Trụ Hạng',
-    tenTeam2: 'FEED TO WIN'
+    tenTeam2: 'WhiteWolves'
   },
   {
     tenBang: 'Bảng C',
@@ -262,7 +262,7 @@ const competition_teams = [
     tenTeam1: 'The Dawnseeker',
     tenTeam2: 'SHADOW STRIKERS ESPORTS'
   },
-  // tournamentData3
+  // 11h
   {
     tenBang: 'Bảng A',
     logoTeam1: logo1,
@@ -319,7 +319,7 @@ const competition_teams = [
     tenTeam1: 'Demon Team',
     tenTeam2: 'SHADOW STRIKERS ESPORTS'
   },
-  // tournamentData4
+  // 11h30
   {
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
@@ -330,9 +330,9 @@ const competition_teams = [
   {
     tenBang: 'Bảng B',
     logoTeam1: doitru,
-    logoTeam2: heo2,
+    logoTeam2: unbreak,
     tenTeam1: 'Đội Trụ Hạng',
-    tenTeam2: 'Heo Búy'
+    tenTeam2: 'Unbreakeble'
   },
   {
     tenBang: 'Bảng C',
@@ -376,20 +376,13 @@ const competition_teams = [
     tenTeam1: 'The Dawnseeker',
     tenTeam2: 'Mèo Béo'
   },
-  // tournamentData5
+  // 13h30
   {
     tenBang: 'Bảng A',
     logoTeam1: logo1,
     logoTeam2: fivego2,
     tenTeam1: 'Dark night',
     tenTeam2: '5GO'
-  },
-  {
-    tenBang: 'Bảng B',
-    logoTeam1: hieucaidangcap2,
-    logoTeam2: feedtowin2,
-    tenTeam1: 'Hiểu Cái Đẳng Cấp',
-    tenTeam2: 'FEED TO WIN'
   },
   {
     tenBang: 'Bảng C',
@@ -412,20 +405,13 @@ const competition_teams = [
     tenTeam1: 'Bố Già',
     tenTeam2: 'E-Team Champion'
   },
-  // tournamentData6
+  // 14h
   {
     tenBang: 'Bảng A',
     logoTeam1: vinagang2,
     logoTeam2: fight2,
     tenTeam1: 'VINAGANG',
     tenTeam2: '2 Fight'
-  },
-  {
-    tenBang: 'Bảng B',
-    logoTeam1: whitewolves2,
-    logoTeam2: heo2,
-    tenTeam1: 'WhiteWolves',
-    tenTeam2: 'Heo Búy'
   },
   {
     tenBang: 'Bảng C',
@@ -448,20 +434,13 @@ const competition_teams = [
     tenTeam1: 'HANOVER',
     tenTeam2: 'Two Step Ahead'
   },
-  // tournamentData7
+  // 14h30
   {
     tenBang: 'Bảng A',
     logoTeam1: fivego2,
     logoTeam2: fight2,
     tenTeam1: '5GO',
     tenTeam2: '2 Fight'
-  },
-  {
-    tenBang: 'Bảng B',
-    logoTeam1: feedtowin2,
-    logoTeam2: heo2,
-    tenTeam1: 'FEED TO WIN',
-    tenTeam2: 'Heo Búy'
   },
   {
     tenBang: 'Bảng C',
@@ -484,20 +463,13 @@ const competition_teams = [
     tenTeam1: 'E-Team Champion',
     tenTeam2: 'Two Step Ahead'
   },
-  // tournamentData8
+  // 15h
   {
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
     logoTeam2: vinagang2,
     tenTeam1: 'ChickenUDU',
     tenTeam2: 'VINAGANG'
-  },
-  {
-    tenBang: 'Bảng B',
-    logoTeam1: doitru,
-    logoTeam2: whitewolves2,
-    tenTeam1: 'Đội Trụ Hạng',
-    tenTeam2: 'WhiteWolves'
   },
   {
     tenBang: 'Bảng C',

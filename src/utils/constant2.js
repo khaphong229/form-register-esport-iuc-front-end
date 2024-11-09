@@ -11,9 +11,7 @@ import demon from '../assets/images/logo-teams/demon.jpeg'
 import dutrinhko from '../assets/images/logo-teams/dutrinhko.jpeg'
 import doitru from '../assets/images/logo-teams/doitruhang.jpg'
 import eTeam from '../assets/images/logo-teams/eteam.png'
-import feedtowin2 from '../assets/images/logo-teams/feedtowin.png'
 import gap from '../assets/images/logo-teams/gap.jpg'
-import heo2 from '../assets/images/logo-teams/heo.jpeg'
 import hieucaidangcap2 from '../assets/images/logo-teams/hieucaidangcap.png'
 import hnp from '../assets/images/logo-teams/hnp.jpg'
 import kidflash from '../assets/images/logo-teams/kidflash.png'
@@ -31,6 +29,7 @@ import udugamezone from '../assets/images/logo-teams/udugamezome.jpg'
 import vinagang2 from '../assets/images/logo-teams/vinagang.jpg'
 import whitewolves2 from '../assets/images/logo-teams/whitewolves.jpg'
 import meobeo from '../assets/images/logo-teams/meobeo.jpg'
+import unbreak from '../assets/images/logo-teams/unbreak.jpeg'
 
 const list_teams_ok = [
   {
@@ -48,9 +47,8 @@ const list_teams_ok = [
     teams: [
       { logo: hieucaidangcap2, name: 'Hiểu Cái Đẳng Cấp', score: 0 },
       { logo: doitru, name: 'Đội Trụ Hạng', score: 0 },
-      { logo: feedtowin2, name: 'FEED TO WIN', score: 0 },
-      { logo: whitewolves2, name: 'WhiteWolves', score: 0 },
-      { logo: heo2, name: 'Heo Buý', score: 0 }
+      { logo: unbreak, name: 'Unbreakeble', score: 0 },
+      { logo: whitewolves2, name: 'WhiteWolves', score: 0 }
     ]
   },
   {
