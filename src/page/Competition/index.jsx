@@ -38,6 +38,25 @@ function Competition() {
     return adminLocal ? true : false
   }
 
+  const getTimeSlotDescription = () => {
+    const currentTime = new Date()
+    const hours = currentTime.getHours()
+    const minutes = currentTime.getMinutes()
+
+    if (hours === 9 && minutes < 30) return 'Bảng thi đấu 9:00 - 9:30'
+    if (hours === 9 && minutes >= 30) return 'Bảng thi đấu 9:30 - 10:00'
+    if (hours === 10 && minutes < 30) return 'Bảng thi đấu 10:00 - 10:30'
+    if (hours === 10 && minutes >= 30) return 'Bảng thi đấu 10:30 - 11:00'
+    if (hours === 11 && minutes < 30) return 'Bảng thi đấu 11:00 - 11:30'
+    if (hours === 11 && minutes >= 30) return 'Bảng thi đấu 11:30 - 12:00'
+    if (hours === 13 && minutes >= 30) return 'Bảng thi đấu 13:30 - 14:00'
+    if (hours === 14 && minutes >= 0) return 'Bảng thi đấu 14:00 - 14:30'
+    if (hours === 14 && minutes >= 30) return 'Bảng thi đấu 14:30 - 15:00'
+    if (hours === 15 && minutes >= 0) return 'Bảng thi đấu 15:00 - 15:30'
+
+    return 'Chưa tới giờ thi đấu'
+  }
+
   const getCurrentTimeSlot = () => {
     const currentTime = new Date()
     const hours = currentTime.getHours()
@@ -58,10 +77,12 @@ function Competition() {
   }
 
   const [currentSlot, setCurrentSlot] = useState(getCurrentTimeSlot())
+  const [timeSlotTitle, setTimeSlotTitle] = useState(getTimeSlotDescription())
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlot(getCurrentTimeSlot())
+      setTimeSlotTitle(getTimeSlotDescription())
     }, 30000)
 
     return () => clearInterval(interval)
@@ -129,7 +150,7 @@ function Competition() {
         <img src={item2} alt="img-nak" className="img__item-2" />
         <img src={item3} alt="img-laville" className="img__item-3" />
       </div>
-      <Header title="Bảng thi đấu hiện tại" />
+      <Header title={timeSlotTitle} />
       <div className="list-team__navigate">
         <DoubleRightOutlined />
         <Link to="/list-teams" className="text-navigate">
@@ -164,7 +185,9 @@ function Competition() {
                 </Tooltip>
 
                 <Tooltip title={team.tenTeam1}>
-                  <span className="name-team">{team.tenTeam1}</span>
+                  <span className="name-team" style={{ 'text-decoration': team.isDefeated1 ? 'line-through' : 'none' }}>
+                    {team.tenTeam1}
+                  </span>
                 </Tooltip>
               </div>
               <div className="icon-solo">
@@ -179,7 +202,9 @@ function Competition() {
                   />
                 </Tooltip>
                 <Tooltip title={team.tenTeam2}>
-                  <span className="name-team">{team.tenTeam2}</span>
+                  <span className="name-team" style={{ 'text-decoration': team.isDefeated2 ? 'line-through' : 'none' }}>
+                    {team.tenTeam2}
+                  </span>
                 </Tooltip>
               </div>
             </div>
