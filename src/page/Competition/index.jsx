@@ -46,12 +46,12 @@ function Competition() {
     if (hours === 9 && minutes < 30) return 'Bảng thi đấu 9:00 - 9:30'
     if (hours === 9 && minutes >= 30) return 'Bảng thi đấu 9:30 - 10:00'
     if (hours === 10 && minutes < 30) return 'Bảng thi đấu 10:00 - 10:30'
-    if (hours === 10 && minutes >= 45) return 'Bảng thi đấu 10:30 - 11:00'
-    if (hours === 11 && minutes < 45) return 'Bảng thi đấu 11:00 - 11:30'
-    if (hours === 11 && minutes >= 45) return 'Bảng thi đấu 11:30 - 12:00'
-    if (hours === 13 && minutes >= 45) return 'Bảng thi đấu 13:30 - 14:00'
+    if (hours === 10 && minutes >= 30) return 'Bảng thi đấu 10:30 - 11:00'
+    if (hours === 11 && minutes < 30) return 'Bảng thi đấu 11:00 - 11:30'
+    if (hours === 11 && minutes >= 30) return 'Bảng thi đấu 11:30 - 12:00'
+    if (hours === 13 && minutes >= 30) return 'Bảng thi đấu 13:30 - 14:00'
     if (hours === 14 && minutes >= 0) return 'Bảng thi đấu 14:00 - 14:30'
-    if (hours === 14 && minutes >= 45) return 'Bảng thi đấu 14:30 - 15:00'
+    if (hours === 14 && minutes >= 30) return 'Bảng thi đấu 14:30 - 15:00'
     if (hours === 15 && minutes >= 0) return 'Bảng thi đấu 15:00 - 15:30'
 
     return 'Chưa tới giờ thi đấu'
@@ -69,7 +69,7 @@ function Competition() {
     if (hours === 11 && minutes < 30) return { start: 32, end: 40 } // 11:00 - 11:30
     if (hours === 11 && minutes >= 30) return { start: 40, end: 48 } // 11:30 - 12:00
     if (hours === 13 && minutes >= 30) return { start: 48, end: 52 } // 13:30 - 14:00
-    if (hours === 14 && minutes >= 0) return { start: 52, end: 56 } // 14:00 - 14:30
+    if (hours === 14 && minutes < 30) return { start: 52, end: 56 } // 14:00 - 14:30
     if (hours === 14 && minutes >= 30) return { start: 56, end: 60 } // 14:30 - 15:00
     if (hours === 15 && minutes >= 0) return { start: 60, end: 64 } // 15:00 - 15:30
 
