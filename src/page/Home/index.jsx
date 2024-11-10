@@ -18,25 +18,25 @@ const tournamentInfo = [
       feeExemption: 'Miễn phí cho đội có thành viên nữ'
     }
   },
-  {
-    category: 'Điều kiện tham gia',
-    requirements: {
-      university: 'Học viện Công nghệ Bưu chính Viễn thông',
-      teamSize: 5,
-      groups: [
-        {
-          name: 'Bảng A',
-          description: 'Dành cho sinh viên chương trình CNTT Định hướng ứng dụng',
-          maxTeams: 16
-        },
-        {
-          name: 'Bảng B',
-          description: 'Dành cho sinh viên HVBCVT, yêu cầu tối thiểu 1 thành viên là sinh viên UDU',
-          maxTeams: 16
-        }
-      ]
-    }
-  },
+  // {
+  //   category: 'Điều kiện tham gia',
+  //   requirements: {
+  //     university: 'Học viện Công nghệ Bưu chính Viễn thông',
+  //     teamSize: 5,
+  //     groups: [
+  //       {
+  //         name: 'Bảng A',
+  //         description: 'Dành cho sinh viên chương trình CNTT Định hướng ứng dụng',
+  //         maxTeams: 16
+  //       },
+  //       {
+  //         name: 'Bảng B',
+  //         description: 'Dành cho sinh viên HVBCVT, yêu cầu tối thiểu 1 thành viên là sinh viên UDU',
+  //         maxTeams: 16
+  //       }
+  //     ]
+  //   }
+  // },
   {
     category: 'Giải thưởng',
     prizes: [
@@ -59,23 +59,23 @@ const tournamentInfo = [
       }
     ]
   },
-  {
-    category: 'Lịch trình thi đấu',
-    schedule: [
-      {
-        date: '07/11/2024',
-        event: 'Bốc thăm chia lượt đấu và thu lệ phí'
-      },
-      {
-        date: '10/11/2024',
-        event: 'Thi đấu vòng bảng và vòng 1/8'
-      },
-      {
-        date: '17/11/2024',
-        event: 'Thi đấu vòng chung kết và trao giải'
-      }
-    ]
-  },
+  // {
+  //   category: 'Lịch trình thi đấu',
+  //   schedule: [
+  //     {
+  //       date: '07/11/2024',
+  //       event: 'Bốc thăm chia lượt đấu và thu lệ phí'
+  //     },
+  //     {
+  //       date: '10/11/2024',
+  //       event: 'Thi đấu vòng bảng và vòng 1/8'
+  //     },
+  //     {
+  //       date: '17/11/2024',
+  //       event: 'Thi đấu vòng chung kết và trao giải'
+  //     }
+  //   ]
+  // },
   {
     category: 'Địa điểm thi đấu',
     locations: [
@@ -89,14 +89,14 @@ const tournamentInfo = [
       }
     ]
   },
-  {
-    category: 'Thông tin ưu tiên',
-    priorities: [
-      'Ưu tiên 1: Các đội có thành viên là sinh viên UDU',
-      'Ưu tiên 2: Các đội có thành viên là nữ',
-      'Ưu tiên 3: Theo thứ tự thời gian đăng ký'
-    ]
-  },
+  // {
+  //   category: 'Thông tin ưu tiên',
+  //   priorities: [
+  //     'Ưu tiên 1: Các đội có thành viên là sinh viên UDU',
+  //     'Ưu tiên 2: Các đội có thành viên là nữ',
+  //     'Ưu tiên 3: Theo thứ tự thời gian đăng ký'
+  //   ]
+  // },
   {
     category: 'Yêu cầu về tham dự',
     requirements: [
@@ -131,7 +131,7 @@ function Home() {
         data-aos="fade-down"
       />
       <button data-aos="zoom-in" className="btn info__btn" onClick={handlePassRegister}>
-        Xem giải đấu
+        Theo dõi giải đấu
       </button>
       <div className="info-wrap">
         {tournamentInfo.map((section, index) => (

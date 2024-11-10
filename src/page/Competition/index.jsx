@@ -54,7 +54,7 @@ function Competition() {
     if (hours === 14 && minutes >= 30) return { start: 56, end: 60 } // 14:30 - 15:00
     if (hours === 15 && minutes >= 0) return { start: 60, end: 64 } // 15:00 - 15:30
 
-    return { start: 0, end: 8 }
+    return { start: 0, end: 0 }
   }
 
   const [currentSlot, setCurrentSlot] = useState(getCurrentTimeSlot())

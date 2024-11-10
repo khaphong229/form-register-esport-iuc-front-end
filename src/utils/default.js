@@ -40,7 +40,7 @@ const competition_teams = [
     logoTeam1: logo1,
     logoTeam2: chickenUdu,
     tenTeam1: 'Dark night',
-    tenTeam2: 'ChickenUDU'
+    tenTeam2: 'Chicken UDU 04'
   },
   {
     tenBang: 'Bảng B',
@@ -116,7 +116,7 @@ const competition_teams = [
   {
     tenBang: 'Bảng D',
     logoTeam1: nova,
-    logoTeam2: chickenJpg,
+    logoTeam2: logo1,
     tenTeam1: 'NOVA',
     tenTeam2: 'Đưa Hết Tiền Đây'
   },
@@ -210,7 +210,7 @@ const competition_teams = [
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
     logoTeam2: fivego2,
-    tenTeam1: 'ChickenUDU',
+    tenTeam1: 'Chicken UDU 04',
     tenTeam2: '5GO'
   },
   {
@@ -287,7 +287,7 @@ const competition_teams = [
   {
     tenBang: 'Bảng D',
     logoTeam1: thelastdance,
-    logoTeam2: chickenJpg,
+    logoTeam2: logo1,
     tenTeam1: 'the last dance',
     tenTeam2: 'Đưa Hết Tiền Đây'
   },
@@ -324,7 +324,7 @@ const competition_teams = [
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
     logoTeam2: fight2,
-    tenTeam1: 'ChickenUDU',
+    tenTeam1: 'Chicken UDU 04',
     tenTeam2: '2 Fight'
   },
   {
@@ -422,7 +422,7 @@ const competition_teams = [
   },
   {
     tenBang: 'Bảng D',
-    logoTeam1: chickenJpg,
+    logoTeam1: logo1,
     logoTeam2: ce1,
     tenTeam1: 'Đưa Hết Tiền Đây',
     tenTeam2: 'CE01'
@@ -468,7 +468,7 @@ const competition_teams = [
     tenBang: 'Bảng A',
     logoTeam1: chickenUdu,
     logoTeam2: vinagang2,
-    tenTeam1: 'ChickenUDU',
+    tenTeam1: 'Chicken UDU 04',
     tenTeam2: 'VINAGANG'
   },
   {
@@ -481,7 +481,7 @@ const competition_teams = [
   {
     tenBang: 'Bảng D',
     logoTeam1: chickenJpg,
-    logoTeam2: chickenJpg,
+    logoTeam2: logo1,
     tenTeam1: 'Chicken',
     tenTeam2: 'Đưa Hết Tiền Đây'
   },

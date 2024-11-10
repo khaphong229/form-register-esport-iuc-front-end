@@ -13,11 +13,16 @@ function ListTeamCompetition() {
     })
   }, [])
 
+  const sortedTeams = list_teams_ok.map(group => ({
+    ...group,
+    teams: [...group.teams].sort((a, b) => b.score - a.score)
+  }))
+
   return (
     <div className="list-team__container">
       <Header title="Danh sách các đội tham gia thi đấu ngày 10/11/2024" />
       <div className="list-team__group">
-        {list_teams_ok.map((team, index) => (
+        {sortedTeams.map((team, index) => (
           <div key={team.table} className="team-group" data-aos="fade-up" data-aos-delay={index * 100}>
             <div className="team-group__top">
               <span>{team.table}</span>

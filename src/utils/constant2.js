@@ -36,7 +36,7 @@ const list_teams_ok = [
     table: 'Bảng A',
     teams: [
       { logo: logo1, name: 'Dark night', score: 0 },
-      { logo: chickenUdu, name: 'ChickenUDU', score: 0 },
+      { logo: chickenUdu, name: 'Chicken UDU 04', score: 0 },
       { logo: fivego2, name: '5GO', score: 0 },
       { logo: vinagang2, name: 'VINAGANG', score: 0 },
       { logo: fight2, name: '2 Fight', score: 0 }
