@@ -47,7 +47,7 @@ const list_teams_ok = [
     teams: [
       { logo: hieucaidangcap2, name: 'Hiểu Cái Đẳng Cấp', score: 1 },
       { logo: doitru, name: 'Đội Trụ Hạng', score: 0 },
-      { logo: unbreak, name: 'Unbreakeble', score: 1 },
+      { logo: unbreak, name: 'Unbreakeble', score: 2 },
       { logo: whitewolves2, name: 'WhiteWolves', score: 0 }
     ]
   },
@@ -58,13 +58,13 @@ const list_teams_ok = [
       { logo: sanhemsieunhan, name: '5 Anh Em Siêu Nhân', score: 1 },
       { logo: gap, name: 'GAP', score: 1 },
       { logo: rpt, name: 'RPT', score: 0 },
-      { logo: dutrinhko, name: 'ĐỦ TRÌNH KHÔNG', score: 0 }
+      { logo: dutrinhko, name: 'ĐỦ TRÌNH KHÔNG', score: 1 }
     ]
   },
   {
     table: 'Bảng D',
     teams: [
-      { logo: thelastdance, name: 'the last dance', score: 1 },
+      { logo: thelastdance, name: 'the last dance', score: 2 },
       { logo: chickenJpg, name: 'Chicken', score: 0 },
       { logo: nova, name: 'NOVA', score: 0 },
       { logo: logo1, name: 'Đưa Hết Tiền Đây', score: 1 },
@@ -74,7 +74,7 @@ const list_teams_ok = [
   {
     table: 'Bảng E',
     teams: [
-      { logo: logo1, name: 'Bố Già', score: 1 },
+      { logo: logo1, name: 'Bố Già', score: 2 },
       { logo: ptitcrazy, name: 'PTIT CRAZY', score: 0 },
       { logo: eTeam, name: 'E-Team Champion', score: 1 },
       { logo: logo1, name: 'HANOVER', score: 0 },
@@ -84,7 +84,7 @@ const list_teams_ok = [
   {
     table: 'Bảng F',
     teams: [
-      { logo: logo1, name: 'Khoa Viễn Thông tới chơi', score: 1 },
+      { logo: logo1, name: 'Khoa Viễn Thông tới chơi', score: 2 },
       { logo: panda, name: 'PANDA', score: 0 },
       { logo: hnp, name: 'Hanoi Phantom - HNP', score: 1 },
       { logo: op, name: 'Over Power (OP)', score: 0 }
@@ -95,14 +95,14 @@ const list_teams_ok = [
     teams: [
       { logo: kidflash, name: 'Kid Flash', score: 0 },
       { logo: outmeta, name: 'Bảnh Outmeta', score: 1 },
-      { logo: sonic, name: 'Sonic', score: 0 },
+      { logo: sonic, name: 'Sonic', score: 1 },
       { logo: laugh, name: 'Revenger Laugh', score: 1 }
     ]
   },
   {
     table: 'Bảng H',
     teams: [
-      { logo: demon, name: 'Demon Team', score: 1 },
+      { logo: demon, name: 'Demon Team', score: 2 },
       { logo: dawnseeker, name: 'The Dawnseeker', score: 0 },
       { logo: meobeo, name: 'Mèo Béo', score: 0 },
       { logo: shadow, name: 'SHADOW STRIKER', score: 1 }
