@@ -71,7 +71,7 @@ function Competition() {
     if (hours === 13 && minutes >= 30) return { start: 48, end: 52 } // 13:30 - 14:00
     if (hours === 14 && minutes < 30) return { start: 52, end: 56 } // 14:00 - 14:30
     if (hours === 14 && minutes >= 30) return { start: 56, end: 60 } // 14:30 - 15:00
-    if (hours === 15 && minutes >= 0) return { start: 60, end: 64 } // 15:00 - 15:30
+    if (hours === 15 && minutes < 30) return { start: 60, end: 64 } // 15:00 - 15:30
 
     return { start: 0, end: 0 }
   }
