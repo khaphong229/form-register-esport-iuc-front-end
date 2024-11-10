@@ -67,7 +67,7 @@ const list_teams_ok = [
       { logo: thelastdance, name: 'the last dance', score: 1 },
       { logo: chickenJpg, name: 'Chicken', score: 0 },
       { logo: nova, name: 'NOVA', score: 0 },
-      { logo: logo1, name: 'Đưa Hết Tiền Đây', score: 0 },
+      { logo: logo1, name: 'Đưa Hết Tiền Đây', score: 1 },
       { logo: ce1, name: 'CE01', score: 0 }
     ]
   },
