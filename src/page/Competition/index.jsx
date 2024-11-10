@@ -87,10 +87,13 @@ function Competition() {
     }
   }, [teams])
 
-  const startTimer = index => {
+  const startTimer = (index, absoluteIndex) => {
     setTeams(prevTeams => {
       const updatedTeams = [...prevTeams]
-      updatedTeams[index].isTimerRunning = !updatedTeams[index].isTimerRunning
+      updatedTeams[absoluteIndex] = {
+        ...updatedTeams[absoluteIndex],
+        isTimerRunning: !updatedTeams[absoluteIndex].isTimerRunning
+      }
       return updatedTeams
     })
   }
@@ -181,7 +184,7 @@ function Competition() {
               </div>
             </div>
             {checkAdmin() ? (
-              <div className="competition-team__bottom" onClick={() => startTimer(index)}>
+              <div className="competition-team__bottom" onClick={() => startTimer(index, start + index)}>
                 <button className="timer-start">
                   {team.isTimerRunning ? <PauseCircleOutlined /> : <PlayCircleOutlined />}
                 </button>

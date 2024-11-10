@@ -35,7 +35,7 @@ const list_teams_ok = [
   {
     table: 'Bảng A',
     teams: [
-      { logo: logo1, name: 'Dark night', score: 0 },
+      { logo: logo1, name: 'Dark night', score: 1 },
       { logo: chickenUdu, name: 'Chicken UDU 04', score: 0 },
       { logo: fivego2, name: '5GO', score: 0 },
       { logo: vinagang2, name: 'VINAGANG', score: 0 },
@@ -45,7 +45,7 @@ const list_teams_ok = [
   {
     table: 'Bảng B',
     teams: [
-      { logo: hieucaidangcap2, name: 'Hiểu Cái Đẳng Cấp', score: 0 },
+      { logo: hieucaidangcap2, name: 'Hiểu Cái Đẳng Cấp', score: 1 },
       { logo: doitru, name: 'Đội Trụ Hạng', score: 0 },
       { logo: unbreak, name: 'Unbreakeble', score: 0 },
       { logo: whitewolves2, name: 'WhiteWolves', score: 0 }
@@ -55,7 +55,7 @@ const list_teams_ok = [
     table: 'Bảng C',
     teams: [
       { logo: udugamezone, name: 'UDU Game Zone', score: 0 },
-      { logo: sanhemsieunhan, name: '5 Anh Em Siêu Nhân', score: 0 },
+      { logo: sanhemsieunhan, name: '5 Anh Em Siêu Nhân', score: 1 },
       { logo: gap, name: 'GAP', score: 0 },
       { logo: rpt, name: 'RPT', score: 0 },
       { logo: dutrinhko, name: 'ĐỦ TRÌNH KHÔNG', score: 0 }
@@ -64,7 +64,7 @@ const list_teams_ok = [
   {
     table: 'Bảng D',
     teams: [
-      { logo: thelastdance, name: 'the last dance', score: 0 },
+      { logo: thelastdance, name: 'the last dance', score: 1 },
       { logo: chickenJpg, name: 'Chicken', score: 0 },
       { logo: nova, name: 'NOVA', score: 0 },
       { logo: logo1, name: 'Đưa Hết Tiền Đây', score: 0 },
@@ -74,7 +74,7 @@ const list_teams_ok = [
   {
     table: 'Bảng E',
     teams: [
-      { logo: logo1, name: 'Bố Già', score: 0 },
+      { logo: logo1, name: 'Bố Già', score: 1 },
       { logo: ptitcrazy, name: 'PTIT CRAZY', score: 0 },
       { logo: eTeam, name: 'E-Team Champion', score: 0 },
       { logo: logo1, name: 'HANOVER', score: 0 },
@@ -84,7 +84,7 @@ const list_teams_ok = [
   {
     table: 'Bảng F',
     teams: [
-      { logo: logo1, name: 'Khoa Viễn Thông tới chơi', score: 0 },
+      { logo: logo1, name: 'Khoa Viễn Thông tới chơi', score: 1 },
       { logo: panda, name: 'PANDA', score: 0 },
       { logo: hnp, name: 'Hanoi Phantom - HNP', score: 0 },
       { logo: op, name: 'Over Power (OP)', score: 0 }
@@ -94,7 +94,7 @@ const list_teams_ok = [
     table: 'Bảng G',
     teams: [
       { logo: kidflash, name: 'Kid Flash', score: 0 },
-      { logo: outmeta, name: 'Bảnh Outmeta', score: 0 },
+      { logo: outmeta, name: 'Bảnh Outmeta', score: 1 },
       { logo: sonic, name: 'Sonic', score: 0 },
       { logo: laugh, name: 'Revenger Laugh', score: 0 }
     ]
@@ -102,7 +102,7 @@ const list_teams_ok = [
   {
     table: 'Bảng H',
     teams: [
-      { logo: demon, name: 'Demon Team', score: 0 },
+      { logo: demon, name: 'Demon Team', score: 1 },
       { logo: dawnseeker, name: 'The Dawnseeker', score: 0 },
       { logo: meobeo, name: 'Mèo Béo', score: 0 },
       { logo: shadow, name: 'SHADOW STRIKER', score: 0 }
