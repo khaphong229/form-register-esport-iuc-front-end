@@ -116,7 +116,7 @@ function Home() {
   }, [])
 
   const handlePassRegister = () => {
-    navigate('/competition')
+    navigate('/list-teams')
   }
 
   return (
