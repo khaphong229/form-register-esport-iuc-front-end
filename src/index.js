@@ -8,6 +8,7 @@ import './assets/scss/reset.scss'
 import './assets/scss/base.scss'
 import Competition from './page/Competition'
 import ListTeamCompetition from './page/ListTeamCompetition'
+import RankTeam from './page/RankTeam'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: 'list-teams',
     element: <ListTeamCompetition />
+  },
+  {
+    path: 'rank',
+    element: <RankTeam />
   }
 ])
 
