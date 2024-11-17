@@ -79,7 +79,7 @@ export default function RankTeam() {
         return
       }
 
-      const result = await TournamentService.updateScore({
+      const result = await TournamentService.updateScoreRank({
         tournamentId: idTournament,
         tableIndex,
         teamIndex,
@@ -206,7 +206,7 @@ export default function RankTeam() {
           {['A', 'B', 'C', 'D'].map((winner, idx) => (
             <div key={winner} className="flex items-center gap-4">
               <TeamBlock
-                team={selectedTeams.winners[winner]?.name || `Bảng ${winner}`}
+                team={selectedTeams.winners[winner]?.name || `Lượt đấu ${idx + 1}`}
                 logo={selectedTeams.winners[winner]?.logo}
                 delay={(idx + 8) * 100}
                 selectable
@@ -286,7 +286,7 @@ export default function RankTeam() {
           {['E', 'F', 'G', 'H'].map((winner, idx) => (
             <div key={winner} className="flex items-center gap-4">
               <TeamBlock
-                team={selectedTeams.winners[winner]?.name || `Bảng ${winner}`}
+                team={selectedTeams.winners[winner]?.name || `Lượt đấu ${idx + 5}`}
                 logo={selectedTeams.winners[winner]?.logo}
                 delay={(idx + 16) * 100}
                 selectable

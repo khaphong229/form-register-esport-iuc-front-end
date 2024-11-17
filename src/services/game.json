@@ -2,7 +2,7 @@
   "_id": { "$oid": "6736be2546c39863aa27074e" },
   "data": [
     {
-      "table": "Bảng A",
+      "table": "Lượt đấu 1",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640416/logo-teams/pzjrtpvmev2ee9w5s5mu.jpg",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "table": "Bảng B",
+      "table": "Lượt đấu 2",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640417/logo-teams/h3yk8rdaepar4rpbqmrr.jpg",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "table": "Bảng C",
+      "table": "Lượt đấu 3",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/h3qix8bjxnd9e5n2tplh.jpg",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "table": "Bảng D",
+      "table": "Lượt đấu 4",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640414/logo-teams/avelcismy4pd7ll8v46v.jpg",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "table": "Bảng E",
+      "table": "Lượt đấu 5",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731642288/logo-teams/insxo61nlhx1uihuykxc.jpg",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "table": "Bảng F",
+      "table": "Lượt đấu 6",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731642288/logo-teams/insxo61nlhx1uihuykxc.jpg",
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "table": "Bảng G",
+      "table": "Lượt đấu 7",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/r65ke6crwavolouzmvsq.png",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "table": "Bảng H",
+      "table": "Lượt đấu 8",
       "teams": [
         {
           "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640412/logo-teams/ebu67ab8uxbjxc5gklgs.jpg",
