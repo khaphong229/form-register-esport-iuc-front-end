@@ -27,6 +27,31 @@ class TournamentService {
     }
   }
 
+  static async getAllRank(params = {}) {
+    try {
+      const response = await axiosInstance.get(
+        '/tournament/rank',
+        { params },
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      )
+      return {
+        success: true,
+        data: response[0]
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: {
+          status: error?.response?.status,
+          message: error?.message
+        }
+      }
+    }
+  }
   static async updateScore(data) {
     try {
       const response = await axiosInstance.put('/tournament/update-score', data, {

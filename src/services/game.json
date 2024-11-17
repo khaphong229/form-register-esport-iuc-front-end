@@ -1,0 +1,126 @@
+{
+  "_id": { "$oid": "6736be2546c39863aa27074e" },
+  "data": [
+    {
+      "table": "Bảng A",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640416/logo-teams/pzjrtpvmev2ee9w5s5mu.jpg",
+          "name": "VINAGANG",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640415/logo-teams/lnaoxtrmp8m7cm2ji01e.png",
+          "name": "Hiểu Cái Đẳng Cấp",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng B",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640417/logo-teams/h3yk8rdaepar4rpbqmrr.jpg",
+          "name": "2 Fight",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640417/logo-teams/ageov9brne40eov6fjqe.jpg",
+          "name": "Unbreakeble",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng C",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/h3qix8bjxnd9e5n2tplh.jpg",
+          "name": "ĐỦ TRÌNH KHÔNG",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640415/logo-teams/d8eqmzmp9nassmerxvlm.png",
+          "name": "the last dance",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng D",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640414/logo-teams/avelcismy4pd7ll8v46v.jpg",
+          "name": "GAP",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640412/logo-teams/xfn9y2djop51md8e3mex.jpg",
+          "name": "Chicken",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng E",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731642288/logo-teams/insxo61nlhx1uihuykxc.jpg",
+          "name": "Bố Già",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/kv3tfjizw4tgzelada3o.jpg",
+          "name": "PANDA",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng F",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731642288/logo-teams/insxo61nlhx1uihuykxc.jpg",
+          "name": "Khoa Viễn Thông tới chơi",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640414/logo-teams/lfqxn8nyin2vlgdbv5yn.png",
+          "name": "PTIT CRAZY",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng G",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/r65ke6crwavolouzmvsq.png",
+          "name": "Bảnh Outmeta",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640414/logo-teams/hlgsxrgykxxq6ipytofc.jpg",
+          "name": "SHADOW STRIKER",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    },
+    {
+      "table": "Bảng H",
+      "teams": [
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640412/logo-teams/ebu67ab8uxbjxc5gklgs.jpg",
+          "name": "Revenger Laugh",
+          "score": { "$numberInt": "0" }
+        },
+        {
+          "logo": "https://res.cloudinary.com/dqca5ltt9/image/upload/v1731640413/logo-teams/cexy60jxsl0l6xy4mzri.jpg",
+          "name": "Demon Team",
+          "score": { "$numberInt": "0" }
+        }
+      ]
+    }
+  ],
+  "updatedAt": { "$date": { "$numberLong": "1731778143955" } }
+}

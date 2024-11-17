@@ -30,7 +30,7 @@ export default function RankTeam() {
 
     const getAllTournaments = async () => {
       try {
-        const result = await TournamentService.getAll()
+        const result = await TournamentService.getAllRank()
         if (result.success && result.data.data) {
           setIdTournament(result.data._id)
           setListTeams(result.data.data)
